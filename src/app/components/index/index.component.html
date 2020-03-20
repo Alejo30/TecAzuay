@@ -1,0 +1,233 @@
+<div id="page" class="container-fluid mt-0">
+    <div id="page-content" class="row">
+        <div id="region-main-box" class="col-12">
+            <section id="region-main" class="col-12">
+                <span class="notifications" id="user-notifications"></span>
+            </section>
+            <div role="main">
+                <span id="maincontent"></span>
+                <div class="my-1 my-sm-5"></div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-sm-8">
+                        <div class="card">
+                            <div class="card-block">
+                                <h2 class="card-header text-center">
+                                    <img src="assets/2.png" alt="Plataforma Virtual TEC AZUAY" title="Platafoma Virtual TEC AZUAY">
+                                </h2>
+                                <div class="card-body">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <form class="mt-3" id="login" action="">
+                                                <input id="anchor" type="hidden" name="anchor" value="">
+                                                <input type="hidden" name="logintaken" value="">
+                                                <div class="form-group">
+                                                    <label for="username" class="sr-only">"Nombre_de_usuario"</label>
+                                                    <input type="text" name="username" id="username" class="form-control" placeholder="Nombre_de_usuario" autocomplete="username">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password" class="sr-only">Contraseña</label>
+                                                    <input type="password" name="password" id="password" value class="form-control" placeholder="Contraseña" autocomplete="current-password">
+                                                </div>
+                                                <div class="rememberpass mt-3">
+                                                    <input type="checkbox" name="rememberusername" id="rememberusername" value="1">
+                                                    <label for="rememberusername">Recordar nombre_de_usuario</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary btn btn-block mt-3" id="loginbtn">Ingresar</button>
+
+                                            </form>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="forgetpass mt-3">
+                                                <p> <a href="">¿Olvidó su nombre_de_usuario o contraseña?</a></p>
+                                            </div>
+                                            <div class="mt-3">
+                                                " Las 'Cookies' deben estar habilitadas en su navegador"
+                                                <a class="btn btn-link p-0" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="div class=no-overflow><p>Se emplean dos cookies en este sitio:</p>
+                                                    <p>La cookie esencial es la cookie de sesión, usualmente llamada MoodleSession. Usted debe permitir esta cookie en su navegador para proporcionar continuidad y mantener su ingreso de una página a otra página. Cuando Usted se salga del sitio o cierre su navegador, esta cookie es destruida (en su navegador y en el servidor).</p>
+                                                    <p>La otra cookie es meramente por conveniencia, y usualmente se llama algo así como MOODLEID. Únicamente recuerda su nombre_de_usuario dentro del navegador. Esto significa que cuando regrese al sitio, el campo para nombre_de_usuario en la página de ingreso estará previamente llenado para Usted. Es seguro rechazar esta cookie - simplemente tendrá que volver a escribir su nombre_de_usuario cada vez que ingrese.</p>
+                                                    </div> " data-html="true" tabindex="0" data-trigger="focus">
+                                                    <i class="icon fa fa-question-circle text-info fa-fw " title="Ayuda con Las 'Cookies' deben estar habilitadas en su navegador" aria-label="Ayuda con Las 'Cookies' deben estar habilitadas en su navegador"></i>
+                                                </a>
+                                            </div>
+                                            <div class="mt-2">
+                                                <p>Algunos cursos pueden permitir el acceso de invitados</p>
+                                                <form action="https://eduv.tecazuay.edu.ec/login/index.php" method="post" id="guestlogin">
+                                                    <input type="hidden" name="logintoken" value="s8fYFMT3Rj9V3AQEMGyAJ60GkW3vr2fe">
+                                                    <input type="hidden" name="username" value="guest">
+                                                    <input type="hidden" name="password" value="guest">
+                                                    <button class="btn btn-secondary btn-block" type="submit">Ingresar como invitado</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="page-footer" class="py-3 bg-dark text-light">
+    <div class="container">
+        <div id="course-footer"></div>
+
+
+        <div class="logininfo">Usted no ha ingresado.</div>
+        <div class="homelink"><a href="https://eduv.tecazuay.edu.ec/">Página Principal (home)</a></div>
+        <div class="tool_dataprivacy"><a href="https://eduv.tecazuay.edu.ec/admin/tool/dataprivacy/summary.php">Resumen de conservación de datos</a></div><a href="https://download.moodle.org/mobile?version=2018120303&amp;lang=es_mx&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Obtener la App Mobile</a>
+        <script type="text/javascript">
+            //<![CDATA[
+            var require = {
+                baseUrl: 'https://eduv.tecazuay.edu.ec/lib/requirejs.php/1584513692/',
+                // We only support AMD modules with an explicit define() statement.
+                enforceDefine: true,
+                skipDataMain: true,
+                waitSeconds: 0,
+
+                paths: {
+                    jquery: 'https://eduv.tecazuay.edu.ec/lib/javascript.php/1584513692/lib/jquery/jquery-3.2.1.min',
+                    jqueryui: 'https://eduv.tecazuay.edu.ec/lib/javascript.php/1584513692/lib/jquery/ui-1.12.1/jquery-ui.min',
+                    jqueryprivate: 'https://eduv.tecazuay.edu.ec/lib/javascript.php/1584513692/lib/requirejs/jquery-private'
+                },
+
+                // Custom jquery config map.
+                map: {
+                    // '*' means all modules will get 'jqueryprivate'
+                    // for their 'jquery' dependency.
+                    '*': {
+                        jquery: 'jqueryprivate'
+                    },
+                    // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+                    '*': {
+                        process: 'core/first'
+                    },
+
+                    // 'jquery-private' wants the real jQuery module
+                    // though. If this line was not here, there would
+                    // be an unresolvable cyclic dependency.
+                    jqueryprivate: {
+                        jquery: 'jquery'
+                    }
+                }
+            };
+
+            //]]>
+        </script>
+        <script type="text/javascript" src="https://eduv.tecazuay.edu.ec/lib/javascript.php/1584513692/lib/requirejs/require.min.js"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            require(['core/first'], function() {;
+                require(["media_videojs/loader"], function(loader) {
+                    loader.setUp(function(videojs) {
+                        videojs.options.flash.swf = "https://eduv.tecazuay.edu.ec/media/player/videojs/videojs/video-js.swf";
+                        videojs.addLanguage("es", {
+                            "Play": "Reproducción",
+                            "Play Video": "Reproducción Vídeo",
+                            "Pause": "Pausa",
+                            "Current Time": "Tiempo reproducido",
+                            "Duration Time": "Duración total",
+                            "Remaining Time": "Tiempo restante",
+                            "Stream Type": "Tipo de secuencia",
+                            "LIVE": "DIRECTO",
+                            "Loaded": "Cargado",
+                            "Progress": "Progreso",
+                            "Fullscreen": "Pantalla completa",
+                            "Non-Fullscreen": "Pantalla no completa",
+                            "Mute": "Silenciar",
+                            "Unmute": "No silenciado",
+                            "Playback Rate": "Velocidad de reproducción",
+                            "Subtitles": "Subtítulos",
+                            "subtitles off": "Subtítulos desactivados",
+                            "Captions": "Subtítulos especiales",
+                            "captions off": "Subtítulos especiales desactivados",
+                            "Chapters": "Capítulos",
+                            "You aborted the media playback": "Ha interrumpido la reproducción del vídeo.",
+                            "A network error caused the media download to fail part-way.": "Un error de red ha interrumpido la descarga del vídeo.",
+                            "The media could not be loaded, either because the server or network failed or because the format is not supported.": "No se ha podido cargar el vídeo debido a un fallo de red o del servidor o porque el formato es incompatible.",
+                            "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "La reproducción de vídeo se ha interrumpido por un problema de corrupción de datos o porque el vídeo precisa funciones que su navegador no ofrece.",
+                            "No compatible source was found for this media.": "No se ha encontrado ninguna fuente compatible con este vídeo."
+                        });
+
+                    });
+                });;
+
+                require(['theme_boost/loader']);;
+
+                ;
+                require(["core/notification"], function(amd) {
+                    amd.init(1, []);
+                });;
+                require(["core/log"], function(amd) {
+                    amd.setConfig({
+                        "level": "warn"
+                    });
+                });;
+                require(["core/page_global"], function(amd) {
+                    amd.init();
+                });
+            });
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            M.str = {
+                "moodle": {
+                    "lastmodified": "\u00daltima modificaci\u00f3n",
+                    "name": "Nombre",
+                    "error": "Error",
+                    "info": "Informaci\u00f3n",
+                    "yes": "S\u00ed",
+                    "no": "No",
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar",
+                    "areyousure": "\u00bfEst\u00e1 Usted seguro?",
+                    "closebuttontitle": "Cerrar",
+                    "unknownerror": "Error desconocido"
+                },
+                "repository": {
+                    "type": "Tipo",
+                    "size": "Tama\u00f1o",
+                    "invalidjson": "Cadena JSON no v\u00e1lida",
+                    "nofilesattached": "No se han adjuntado archivos",
+                    "filepicker": "Selector de archivos",
+                    "logout": "Salir",
+                    "nofilesavailable": "No hay archivos disponibles",
+                    "norepositoriesavailable": "Lo sentimos, ninguno de sus repositorios actuales puede devolver archivos en el formato solicitado.",
+                    "fileexistsdialogheader": "El archivo existe",
+                    "fileexistsdialog_editor": "Un archivo con ese nombre ha sido anexado al texto que Usted est\u00e1 editando",
+                    "fileexistsdialog_filemanager": "Ya ha sido anexado un archivo con ese nombre",
+                    "renameto": "Cambiar el nombre a \"{$a}\"",
+                    "referencesexist": "Existen {$a} archivos de alias\/atajos que emplean este archivo como su or\u00edgen",
+                    "select": "Seleccionar"
+                },
+                "admin": {
+                    "confirmdeletecomments": "Est\u00e1 a punto de eliminar comentarios, \u00bfest\u00e1 seguro?",
+                    "confirmation": "Confirmaci\u00f3n"
+                }
+            };
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            (function() {
+                Y.use("moodle-filter_mathjaxloader-loader", function() {
+                    M.filter_mathjaxloader.configure({
+                        "mathjaxconfig": "MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n",
+                        "lang": "es"
+                    });
+                });
+                M.util.help_popups.setup(Y);
+                M.util.js_pending('random5e74c3635c59d2');
+                Y.on('domready', function() {
+                    M.util.js_complete("init");
+                    M.util.js_complete('random5e74c3635c59d2');
+                });
+            })();
+            //]]>
+        </script>
+
+    </div>
+</footer>
